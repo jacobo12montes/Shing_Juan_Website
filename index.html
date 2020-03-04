@@ -13,7 +13,25 @@
     <script  src="js/index.js"></script>
 
     <form id = "survey-form">
-      <input type = "text" placeholder = "Enter name here" id = "name"/>
+      <label id="name-label"> Name </label>
+      <input type = "text" placeholder = "Enter name here" id = "name" required/><br>
+      <label id="email-label"> Email </label>
+      <input type = "email" placeholder = "Enter name here" id = "email" required /><br>
+      <label id="number-label"> Number </label>
+      <input type = "number" min="1" max="100" placeholder = "Enter name here" id = "number" required/><br>
+      <select id = "dropdown"> 
+      <option value="shing"> Shing</option>
+      <option value="juan"> Juan</option>  
+      </select><br>
+      <input type = "radio" name = "gender" value = "male"/> MALE<br>
+      <input type = "radio" name = "gender" value = "female"/> FEMALE<br>
+      <input type = "checkbox" name = "gender" value = "male"/> MALE<br>
+      <input type = "checkbox" name = "gender" value = "female"/> FEMALE<br>
+       
+
+      <textarea> Hi i am juan and my awesome partner  Shingi</textarea><br>
+      <input type="submit" id="submit">
+
     </form>
 
   </body>
